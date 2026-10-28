@@ -1,0 +1,36 @@
+[project]
+name = "ome-converter"
+version = "0.1.0"
+description = "Converts bioformats-readable files into mikro datasets, one per series"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "arkitekt[all]>=9.0",
+    "bioio>=3.5",
+    "bioio-bioformats>=2.0",
+    "dask[array]>=2026.8.0",
+    "kanne>=2.6.0",
+    "mikro>=9.0.0",
+    "numpy>=2.5.4",
+    "ome-types>=0.6.3",
+    "scyjava>=1.12",
+    "xarray>=2026.9.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+addopts = "-m 'not hub'"
+
+[tool.semantic_release]
+version_variables = ["app.py:__version__"]
+commit_message = "chore(release): {version} [skip ci]"
+tag_format = "v{version}"
+allow_zero_version = true
+
+[tool.semantic_release.branches.release]
+match = "main"
+prerelease = false

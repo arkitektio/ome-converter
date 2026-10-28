@@ -1,0 +1,242 @@
+builds:
+- build_id: b81b7089-0c5f-402d-a249-692a003f5453
+  build_run: 5e135b43-81de-4a70-b248-b4bfd286d9f5
+  capabilities: []
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    assets: []
+    bloks: []
+    description: Converts bioformats-readable files (czi, lif, nd2, ome-tiff, ...)
+      into mikro datasets, one per series, with their OME metadata, light path and
+      device state.
+    implementations:
+    - codeHash: 31cb31bc76e07fbb91dfed4e2cb833bcdc0b241610c5b20edd78df667090da58
+      definition:
+        allowProbe: false
+        args:
+        - effects: []
+          identifier: '@mikro/file'
+          key: file
+          kind: STRUCTURE
+          nullable: false
+          validators: []
+          widget:
+            dependencies: []
+            kind: SEARCH
+            query: "query SearchFiles($search: String, $values: [ID!], $limit: Int,\
+              \ $offset: Int = 0) {\n  options: files(\n    filters: { search: $search,\
+              \ ids: $values }\n    pagination: { limit: $limit, offset: $offset }\n\
+              \  ) {\n    value: id\n    label: name\n    __typename\n  }\n}"
+            ward: mikro
+        - default: 6
+          effects: []
+          key: levels
+          kind: INT
+          nullable: true
+          validators: []
+        - default: max
+          effects: []
+          key: method
+          kind: STRING
+          nullable: true
+          validators: []
+        - default: true
+          effects: []
+          key: stage_scene
+          kind: BOOL
+          nullable: true
+          validators: []
+        - default: ''
+          effects: []
+          key: world_name
+          kind: STRING
+          nullable: true
+          validators: []
+        catalogs: []
+        collections:
+        - conversion
+        description: Read a bioformats-supported file (czi, lif, nd2, ome-tiff, ...)
+          and upload every series as a pyramided dataset, with its OME metadata, light
+          path and device state, placed in a shared micrometer space.
+        idempotent: false
+        isDev: false
+        isTestFor: []
+        key: convert_ome_file_to_datasets
+        kind: FUNCTION
+        name: Convert OME file to Datasets
+        portGroups: []
+        pure: false
+        returns:
+        - children:
+          - effects: []
+            identifier: '@mikro/arraydataset'
+            key: '...'
+            kind: STRUCTURE
+            nullable: false
+          effects: []
+          key: return0
+          kind: LIST
+          nullable: false
+        stateful: false
+        version: '1'
+      dependencies: []
+      effects: UNKNOWN
+      execution: PLAIN
+      interface: convert_ome_file_to_datasets
+      locks: []
+      manipulates: []
+      needsToken: true
+      optimistics: []
+      tracks: []
+    locks: []
+    requirements:
+    - description: Where the user's images and their metadata live
+      key: mikro
+      optional: false
+      service: live.arkitekt.mikro
+    - description: Where this app's actions are offered and assigned
+      key: rekuest
+      optional: false
+      service: live.arkitekt.rekuest
+    - description: Where the user's files are stored
+      key: s3
+      optional: false
+      service: live.arkitekt.s3
+    size: 716573539
+    states: []
+  manifest:
+    author: jhnnsrs
+    description: Converts bioformats-readable files (czi, lif, nd2, ome-tiff, ...)
+      into mikro datasets, one per series, with their OME metadata, light path and
+      device state.
+    entrypoint: app
+    identifier: ome-converter
+    scopes:
+    - read
+    - write
+    version: 0.0.1
+  platforms:
+  - linux/amd64
+  selectors: []
+- build_id: 0133f36b-9a9e-4493-9d93-09d3294234eb
+  build_run: 4b00d358-e257-434f-8c31-ff2b96dce30b
+  capabilities: []
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    assets: []
+    bloks: []
+    description: Converts bioformats-readable files (czi, lif, nd2, ome-tiff, ...)
+      into mikro datasets, one per series, with their OME metadata, light path and
+      device state.
+    implementations:
+    - codeHash: 31cb31bc76e07fbb91dfed4e2cb833bcdc0b241610c5b20edd78df667090da58
+      definition:
+        allowProbe: false
+        args:
+        - effects: []
+          identifier: '@mikro/file'
+          key: file
+          kind: STRUCTURE
+          nullable: false
+          validators: []
+          widget:
+            dependencies: []
+            kind: SEARCH
+            query: "query SearchFiles($search: String, $values: [ID!], $limit: Int,\
+              \ $offset: Int = 0) {\n  options: files(\n    filters: { search: $search,\
+              \ ids: $values }\n    pagination: { limit: $limit, offset: $offset }\n\
+              \  ) {\n    value: id\n    label: name\n    __typename\n  }\n}"
+            ward: mikro
+        - default: 6
+          effects: []
+          key: levels
+          kind: INT
+          nullable: true
+          validators: []
+        - default: max
+          effects: []
+          key: method
+          kind: STRING
+          nullable: true
+          validators: []
+        - default: true
+          effects: []
+          key: stage_scene
+          kind: BOOL
+          nullable: true
+          validators: []
+        - default: ''
+          effects: []
+          key: world_name
+          kind: STRING
+          nullable: true
+          validators: []
+        catalogs: []
+        collections:
+        - conversion
+        description: Read a bioformats-supported file (czi, lif, nd2, ome-tiff, ...)
+          and upload every series as a pyramided dataset, with its OME metadata, light
+          path and device state, placed in a shared micrometer space.
+        idempotent: false
+        isDev: false
+        isTestFor: []
+        key: convert_ome_file_to_datasets
+        kind: FUNCTION
+        name: Convert OME file to Datasets
+        portGroups: []
+        pure: false
+        returns:
+        - children:
+          - effects: []
+            identifier: '@mikro/arraydataset'
+            key: '...'
+            kind: STRUCTURE
+            nullable: false
+          effects: []
+          key: return0
+          kind: LIST
+          nullable: false
+        stateful: false
+        version: '1'
+      dependencies: []
+      effects: UNKNOWN
+      execution: PLAIN
+      interface: convert_ome_file_to_datasets
+      locks: []
+      manipulates: []
+      needsToken: true
+      optimistics: []
+      tracks: []
+    locks: []
+    requirements:
+    - description: Where the user's images and their metadata live
+      key: mikro
+      optional: false
+      service: live.arkitekt.mikro
+    - description: Where this app's actions are offered and assigned
+      key: rekuest
+      optional: false
+      service: live.arkitekt.rekuest
+    - description: Where the user's files are stored
+      key: s3
+      optional: false
+      service: live.arkitekt.s3
+    size: 716579121
+    states: []
+  manifest:
+    author: jhnnsrs
+    description: Converts bioformats-readable files (czi, lif, nd2, ome-tiff, ...)
+      into mikro datasets, one per series, with their OME metadata, light path and
+      device state.
+    entrypoint: app
+    identifier: ome-converter
+    scopes:
+    - read
+    - write
+    version: 0.0.1
+  platforms:
+  - linux/amd64
+  selectors: []
+latest_build_run: 4b00d358-e257-434f-8c31-ff2b96dce30b
