@@ -96,7 +96,6 @@ app = App(
         "datasets, one per series, with their OME metadata, light path and device state."
     ),
     author="jhnnsrs",
-    scopes=["read", "write"],
 )
 app.service(mikro_service)
 declare_logos(app)
