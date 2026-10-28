@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.2 (2026-10-28)
+
+### Bug Fixes
+
+- The recorded manifest carries the scopes a run asks for (arkitekt 10.0.2)
+  ([`86725af`](https://github.com/arkitektio/ome-converter/commit/86725afb813b49495e72f0d8920246c07beabd55))
+
+
 ## v0.2.1 (2026-10-28)
 
 ### Bug Fixes
