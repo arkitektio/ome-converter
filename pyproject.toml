@@ -5,7 +5,7 @@ description = "Converts bioformats-readable files into mikro datasets, one per s
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "arkitekt[all]>=12.1.0",
+    "arkitekt[all]>=13.0.0",
     "bioio>=3.5",
     "bioio-bioformats>=2.0",
     "dask[array]>=2026.8.0",
