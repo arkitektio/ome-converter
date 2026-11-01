@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v0.2.5 (2026-11-01)
+
+### Bug Fixes
+
+- Release an image built on arkitekt 13.0.0
+  ([`96d9ed6`](https://github.com/arkitektio/ome-converter/commit/96d9ed698d60a874e026504cb4df9cc2bdc28bd8))
+
+### Build System
+
+- Lock arkitekt 13.0.0
+  ([`7fbd413`](https://github.com/arkitektio/ome-converter/commit/7fbd413f792c17253e5e531776a38bbd2bc47eaa))
+
+
 ## v0.2.4 (2026-11-01)
 
 ### Bug Fixes
