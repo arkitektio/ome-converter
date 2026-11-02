@@ -20,7 +20,8 @@ Two conventions worth stating once, because both are load-bearing:
 
 from __future__ import annotations
 
-from typing import Any, Sequence
+from typing import Any
+from collections.abc import Sequence
 
 from mikro.api.schema import (
     BeamSplitterElementInput,
@@ -386,7 +387,7 @@ def channel_optikit(
     colour_hex = None
     if colour is not None:
         try:
-            colour_hex = "#%02X%02X%02X" % colour.as_rgb_tuple()[:3]
+            colour_hex = "#{:02X}{:02X}{:02X}".format(*colour.as_rgb_tuple()[:3])
         except Exception:
             colour_hex = text(colour)
 
