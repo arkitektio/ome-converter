@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.7 (2026-11-03)
+
+### Bug Fixes
+
+- Build on arkitekt 13.1.0
+  ([`62b3383`](https://github.com/arkitektio/ome-converter/commit/62b338332a14851f6db1cfec7271f9c9acb6ab74))
+
+
 ## v0.2.6 (2026-11-03)
 
 ### Bug Fixes
