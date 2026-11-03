@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v0.2.6 (2026-11-03)
+
+### Bug Fixes
+
+- Register a file's pixel size as INFERRED
+  ([`579eab6`](https://github.com/arkitektio/ome-converter/commit/579eab6fde76b9c869b8bf3788a26ac6e62db736))
+
+### Refactoring
+
+- Adopt Python 3.11 typing (X | None, builtin generics, collections.abc)
+  ([`8d87f50`](https://github.com/arkitektio/ome-converter/commit/8d87f508c692502b9a285ec8d26b5df14d87ce76))
+
+
 ## v0.2.5 (2026-11-01)
 
 ### Bug Fixes
