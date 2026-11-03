@@ -40,6 +40,7 @@ from arkitekt import App, run
 from mikro import Mikro, build_pyramid, canonical, scales_from, space_3d
 from mikro import mikro_service
 from mikro.api.schema import (
+    PlacementValidity,
     ArrayDataset,
     AxisAnchorInput,
     AxisType,
@@ -1262,7 +1263,7 @@ def convert_series(
         logger.info("Series %s: %s", index, scale_note)
         return Converted(index, name, dataset, specs, False, is_volume, implicit_rgb)
 
-    world.register(dataset, scale=scale, **stage_offsets(pixels, dims))
+    world.register(dataset, validity=PlacementValidity.INFERRED, scale=scale, **stage_offsets(pixels, dims))
     return Converted(index, name, dataset, specs, True, is_volume, implicit_rgb)
 
 
