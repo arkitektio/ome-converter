@@ -1,5 +1,9 @@
 # ome-converter
 
+<!-- arkitekt:badge -->
+[![Open in Arkitekt](https://arkitekt.live/img/badge/open-in-arkitekt.svg)](https://arkitekt.live/deeplink?orkestrator=%2Fdo%2Fv1%2Frepo.install%3Fsource%3Doci%253Aghcr.io%252Farkitektio%252Fome-converter)
+<!-- /arkitekt:badge -->
+
 Converts any file Bio-Formats can read (czi, lif, nd2, ome-tiff, ...) into mikro datasets,
 one pyramided `ArrayDataset` per series.
 
