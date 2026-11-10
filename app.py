@@ -87,7 +87,7 @@ from mikro.inputs.render import composite_graph
 logger = logging.getLogger(__name__)
 
 # The version of the app. A release is the commit tagged with it (v1.2.3).
-__version__ = "0.2.7"
+__version__ = "0.2.8"
 
 app = App(
     "ome-converter",

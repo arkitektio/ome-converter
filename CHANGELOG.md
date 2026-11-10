@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.8 (2026-11-10)
+
+### Bug Fixes
+
+- **deps**: Arkitekt 14.1.0 and mikro 13, with the Open in Arkitekt badge
+  ([`16e644e`](https://github.com/arkitektio/ome-converter/commit/16e644edd258d551d95b36261ee4bffaf98ec9eb))
+
+
 ## v0.2.7 (2026-11-03)
 
 ### Bug Fixes
