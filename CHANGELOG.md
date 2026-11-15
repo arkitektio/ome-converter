@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.9 (2026-11-15)
+
+### Bug Fixes
+
+- **deps**: Arkitekt 16, on agent protocol 2
+  ([`e2fb75c`](https://github.com/arkitektio/ome-converter/commit/e2fb75cc8748e3f2ee89ac5927c662d506629731))
+
+
 ## v0.2.8 (2026-11-10)
 
 ### Bug Fixes
