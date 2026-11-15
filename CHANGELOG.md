@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.11 (2026-11-15)
+
+### Bug Fixes
+
+- Publish the release its tag push kept back
+  ([`2a230ca`](https://github.com/arkitektio/ome-converter/commit/2a230ca9e8df16b09ec0d485526dd8e29d41a0f7))
+
+
 ## v0.2.10 (2026-11-15)
 
 ### Bug Fixes
