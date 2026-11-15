@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.10 (2026-11-15)
+
+### Bug Fixes
+
+- **deps**: Rekuest 15.0.1 and arkitekt-runtime 10.0.1
+  ([`d08bf70`](https://github.com/arkitektio/ome-converter/commit/d08bf70402ce0d097dbefc523d1947ea2d9b668b))
+
+
 ## v0.2.9 (2026-11-15)
 
 ### Bug Fixes
