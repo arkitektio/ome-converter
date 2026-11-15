@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.12 (2026-11-15)
+
+### Bug Fixes
+
+- **deps**: Arkitekt 17 and arkitekt-spec 11
+  ([`cb4c48c`](https://github.com/arkitektio/ome-converter/commit/cb4c48cec68fcac44c5b9551505d34c9604bb8fa))
+
+
 ## v0.2.11 (2026-11-15)
 
 ### Bug Fixes
