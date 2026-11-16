@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v0.2.13 (2026-11-16)
+
+### Bug Fixes
+
+- Bloks are self-contained <Blok kind context> trees
+  ([`5fcc52c`](https://github.com/arkitektio/ome-converter/commit/5fcc52c687eb89643065a05fa26b411ac31b4eda))
+
+### Build System
+
+- Lock arkitekt 18
+  ([`0759770`](https://github.com/arkitektio/ome-converter/commit/075977043b82150c853932dc6fa53a6b8d1fe9e5))
+
+
 ## v0.2.12 (2026-11-15)
 
 ### Bug Fixes
