@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.14 (2026-11-24)
+
+### Bug Fixes
+
+- Build on arkitekt 18.5.2, rekuest 18, arkitekt-spec 13 and mikro 14.2
+  ([`9398b93`](https://github.com/arkitektio/ome-converter/commit/9398b932eecd39e67454b8ef94356694d2f06337))
+
+
 ## v0.2.13 (2026-11-16)
 
 ### Bug Fixes
