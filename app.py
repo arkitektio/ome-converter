@@ -38,7 +38,6 @@ import xarray as xr
 
 from arkitekt import App, run
 from mikro import Mikro, build_pyramid, canonical, scales_from, space_3d
-from mikro import mikro_service
 from mikro.api.schema import (
     PlacementValidity,
     ArrayDataset,
@@ -98,7 +97,7 @@ app = App(
     ),
     author="jhnnsrs",
 )
-app.service(mikro_service)
+app.register_client(Mikro)
 declare_logos(app)
 
 
